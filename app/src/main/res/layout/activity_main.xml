@@ -126,20 +126,21 @@
                 <EditText
                     android:id="@+id/playerNameInput"
                     android:layout_width="350dp"
-                    android:layout_height="40sp"
+                    android:layout_height="30sp"
                     android:ems="10"
                     android:inputType="text"
-                    android:text=""
+                    android:text="fasddfff"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:background="@drawable/input_border"
+                    android:textSize="16sp"
                     android:textColor="#3E2723"
                     android:fontFamily="@font/aclonica"
                     />
 
             </LinearLayout>
 
-            <!-- Quesiton 1 -->
+<!-- Question 1 -->
             <LinearLayout
                 android:layout_width="370dp"
                 android:layout_height="wrap_content"
@@ -156,7 +157,7 @@
                     android:layout_marginTop="5dp"
                     android:gravity="center"
                     android:fontFamily="@font/aclonica"
-                    android:text="Question 1: \nWho wrote the Harry Potter series? "
+                    android:text="Question 1: \nWhat is the national fruit of the Philippines? "
                     android:textColor="#000000"
                     android:textSize="15sp" />
 
@@ -176,6 +177,218 @@
 
                 <Button
                     android:id="@+id/btn1"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:text="Submit"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/background_button"
+                    app:backgroundTint="@null"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/aclonica"
+                    />
+
+            </LinearLayout>
+
+<!-- Question 2 -->
+            <LinearLayout
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/background_border"
+                >
+
+                <TextView
+                    android:id="@+id/question2"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/aclonica"
+                    android:text="Question 2: \nWhat is the largest organ of the human body? "
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/question2Input"
+                    android:layout_width="350dp"
+                    android:layout_height="40sp"
+                    android:ems="20"
+                    android:inputType="text"
+                    android:text=""
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#3E2723"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/aclonica"
+                    />
+
+                <Button
+                    android:id="@+id/btn2"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:text="Submit"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/background_button"
+                    app:backgroundTint="@null"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/aclonica"
+                    />
+
+            </LinearLayout>
+
+<!-- Question 3 -->
+            <LinearLayout
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/background_border"
+                >
+
+                <TextView
+                    android:id="@+id/question3"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/aclonica"
+                    android:text="Question 3: \nWhat is the capital city of the Philippines? "
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/question3Input"
+                    android:layout_width="350dp"
+                    android:layout_height="40sp"
+                    android:ems="20"
+                    android:inputType="text"
+                    android:text=""
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#3E2723"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/aclonica"
+                    />
+
+                <Button
+                    android:id="@+id/btn3"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:text="Submit"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/background_button"
+                    app:backgroundTint="@null"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/aclonica"
+                    />
+
+            </LinearLayout>
+
+<!-- Question 4 -->
+            <LinearLayout
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/background_border"
+                >
+
+                <TextView
+                    android:id="@+id/question4"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/aclonica"
+                    android:text="Question 4: \nHow many continents are there on Earth? "
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/question4Input"
+                    android:layout_width="350dp"
+                    android:layout_height="40sp"
+                    android:ems="20"
+                    android:inputType="text"
+                    android:text=""
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#3E2723"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/aclonica"
+                    />
+
+                <Button
+                    android:id="@+id/btn4"
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:text="Submit"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/background_button"
+                    app:backgroundTint="@null"
+                    android:textColor="#000000"
+                    android:fontFamily="@font/aclonica"
+                    />
+
+            </LinearLayout>
+
+<!-- Question 5 -->
+            <LinearLayout
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/background_border"
+                >
+
+                <TextView
+                    android:id="@+id/question5"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:fontFamily="@font/aclonica"
+                    android:text="Question 5: \nWhat is the closest star to us? "
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/question5Input"
+                    android:layout_width="350dp"
+                    android:layout_height="40sp"
+                    android:ems="20"
+                    android:inputType="text"
+                    android:text=""
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textColor="#3E2723"
+                    android:textSize="16dp"
+                    android:fontFamily="@font/aclonica"
+                    />
+
+                <Button
+                    android:id="@+id/btn5"
                     android:layout_width="100dp"
                     android:layout_height="45dp"
                     android:text="Submit"
