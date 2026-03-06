@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
@@ -23,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         //declare variables here
         Button btn_1, btn_2, btn_3, btn_4, btn_5;
         EditText playerName_Input, question1_Input, question2_Input, question3_Input, question4_Input, question5_Input;
+        TextView display_Result;
 
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
@@ -40,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         question3_Input = findViewById(R.id.question3Input);
         question4_Input = findViewById(R.id.question4Input);
         question5_Input = findViewById(R.id.question5Input);
+        display_Result = findViewById(R.id.displayResult);
 
         //add button action here
 
@@ -122,6 +125,19 @@ public class MainActivity extends AppCompatActivity {
                 }
                 //calling final method, showing anme, score, and percentage
                 finalMessage(count, playerName);
+
+                double avg;
+                double perc;
+                //computation fro the percentage
+                avg = (double) count / 5;
+                perc = avg * 100;
+
+                if (count > 2){
+                    display_Result.setText("Congrats! " + playerName + "!\nYour score is: " + count + "/5 = " + perc + "%");
+                } else {
+                    display_Result.setText("Nice Try! " + playerName + "!\nYour score is: " + count + "/5 = " + perc + "%");
+                }
+
             }
         });
 
