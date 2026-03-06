@@ -14,6 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
+    //declared here so i can access in all btn
     int count = 0;
 
     @Override
@@ -45,17 +46,84 @@ public class MainActivity extends AppCompatActivity {
         btn_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //added toString() cuz I cant compare tje 2 string, idk why yet,,,
                 String answer = question1_Input.getText().toString();
 
                 if (answer.equalsIgnoreCase("Mango")){
+                    //calls a method with toast
                     correctMessage();
+                    //increment so counted and score
                     count++;
+                    //so they cant click it again, if they clicked it again and again, it can make the score higher
+                    btn_1.setEnabled(false);
                 } else {
                     wrongMessage();
                 }
             }
         });
 
+        btn_2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String answer = question2_Input.getText().toString();
+
+                if (answer.equalsIgnoreCase("Skin")){
+                    correctMessage();
+                    count++;
+                    btn_2.setEnabled(false);
+                } else {
+                    wrongMessage();
+                }
+            }
+        });
+
+        btn_3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String answer = question3_Input.getText().toString();
+
+                if (answer.equalsIgnoreCase("Manila")){
+                    correctMessage();
+                    count++;
+                    btn_3.setEnabled(false);
+                } else {
+                    wrongMessage();
+                }
+            }
+        });
+
+        btn_4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String answer = question4_Input.getText().toString();
+
+                if (answer.equalsIgnoreCase("7")){
+                    correctMessage();
+                    count++;
+                    btn_4.setEnabled(false);
+                } else {
+                    wrongMessage();
+                }
+            }
+        });
+
+        btn_5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String answer = question5_Input.getText().toString();
+                String playerName = playerName_Input.getText().toString();
+
+                if (answer.equalsIgnoreCase("Sun")){
+                    correctMessage();
+                    count++;
+                    btn_5.setEnabled(false);
+                } else {
+                    wrongMessage();
+                }
+                //calling final method, showing anme, score, and percentage
+                finalMessage(count, playerName);
+            }
+        });
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -67,9 +135,11 @@ public class MainActivity extends AppCompatActivity {
 
 
     //put method here
+    //pagmali answer
     public void wrongMessage(){
         Toast.makeText(MainActivity.this, "Wrong Answer :[", Toast.LENGTH_SHORT).show();
     }
+    //pagtama answer
     public void correctMessage(){
         Toast.makeText(MainActivity.this, "Correct Answer! :]", Toast.LENGTH_SHORT).show();
     }
@@ -77,18 +147,16 @@ public class MainActivity extends AppCompatActivity {
     public void finalMessage(int score, String name){
         double avg;
         double perc;
-
-        avg = (double) count / 5.00;
+        //computation fro the percentage
+        avg = (double) count / 5;
         perc = avg * 100;
 
+        //if statement if bagsak or not
         if (score > 2){
-            Toast.makeText(MainActivity.this, "Congrats! " + name + "\nYour score is: " + score + "/5 = " + perc + "%", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "Congrats! " + name + "!\nYour score is: " + score + "/5 = " + perc + "%", Toast.LENGTH_LONG).show();
         } else {
-            Toast.makeText(MainActivity.this, "Nice Try! " + name + "\nYour score is: " + score + "/5 = " + perc + "%", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "Nice Try! " + name + "!\nYour score is: " + score + "/5 = " + perc + "%", Toast.LENGTH_LONG).show();
         }
-
-
-
     }
 
 
