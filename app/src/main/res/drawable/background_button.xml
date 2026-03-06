@@ -6,12 +6,12 @@
         ></stroke>
 
     <corners
-        android:radius="10dp"
+        android:radius="20dp"
         ></corners>
 
     <gradient
-        android:startColor="#4F5861"
-        android:endColor="#12141F"
+        android:startColor="#A1887F"
+        android:endColor="#5D4037"
         android:angle="90"
         ></gradient>
 
